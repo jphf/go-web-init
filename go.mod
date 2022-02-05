@@ -1,4 +1,4 @@
-module api
+module github.com/jphf/go-web-init.git
 
 go 1.17
 
