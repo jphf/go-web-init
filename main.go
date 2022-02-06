@@ -1,9 +1,9 @@
 package main
 
 import (
-	"api/internal/util/config"
-	"api/internal/util/logger"
-	"api/server"
+	"github.com/jphf/go-web-init.git/internal/util/config"
+	"github.com/jphf/go-web-init.git/internal/util/logger"
+	"github.com/jphf/go-web-init.git/server"
 )
 
 func main() {

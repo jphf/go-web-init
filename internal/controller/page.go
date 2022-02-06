@@ -1,13 +1,15 @@
 package controller
 
 import (
-	"api/internal/util/config"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"github.com/jphf/go-web-init.git/internal/util/config"
 )
 
-func Index() func(*gin.Context) {
+type PageController struct{}
+
+func (controller PageController) Index() func(*gin.Context) {
 	return func(c *gin.Context) {
 
 		conf := config.Config

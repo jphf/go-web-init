@@ -1,11 +1,13 @@
 package service
 
-import "api/internal/util/config"
+import "github.com/jphf/go-web-init.git/internal/util/config"
 
-func GetName() string {
+type GetService struct{}
+
+func (s GetService) GetName() string {
 	return config.Config.Name
 }
 
-func GetUsage() string {
+func (s GetService) GetUsage() string {
 	return config.Config.Usage
 }
